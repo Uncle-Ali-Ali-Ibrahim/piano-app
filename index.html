@@ -348,7 +348,22 @@
 
         <!-- TAB Feature Section -->
         <!-- Container for Piano Keys -->
-        <h2 class="piano-title" id="piano-title-btn" style="cursor: pointer; user-select: none; transition: transform 0.1s ease;">uncle Ali Piano</h2>
+        <div class="piano-header">
+            <svg class="piano-logo-symbol" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                <!-- Outer frame -->
+                <path d="M 10 10 L 50 10 L 50 50 L 10 50 Z" fill="none" stroke="#5c6bc0" stroke-width="2.5" stroke-linejoin="miter"/>
+                
+                <!-- Stylized "A" as piano symbol -->
+                <path d="M 30 18 L 20 42 L 25 42 L 27 36 L 33 36 L 35 42 L 40 42 L 30 18 Z M 28.5 32 L 30 26 L 31.5 32 Z" fill="#5c6bc0"/>
+                
+                <!-- Piano key accents -->
+                <rect x="15" y="15" width="2" height="8" fill="#7e57c2" rx="0.5"/>
+                <rect x="43" y="15" width="2" height="8" fill="#7e57c2" rx="0.5"/>
+                <rect x="15" y="37" width="2" height="8" fill="#7e57c2" rx="0.5"/>
+                <rect x="43" y="37" width="2" height="8" fill="#7e57c2" rx="0.5"/>
+            </svg>
+            <h2 class="piano-title" id="piano-title-btn" style="cursor: pointer; user-select: none; transition: transform 0.1s ease;">uncle Ali Piano</h2>
+        </div>
         <div class="piano-container" id="keyboard-container"></div>
 
         <!-- Feedback Section -->

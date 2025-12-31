@@ -335,12 +335,35 @@ nav {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add subtle text shadow */
 }
 
+.piano-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    position: relative;
+    z-index: 2;
+}
+
+.piano-logo-symbol {
+    width: 35px;
+    height: 35px;
+    filter: drop-shadow(0 2px 6px rgba(92, 107, 192, 0.4));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.piano-logo-symbol:hover {
+    transform: scale(1.05) rotate(2deg);
+    filter: drop-shadow(0 4px 10px rgba(126, 87, 194, 0.6));
+}
+
 .piano-title {
-    position: relative; /* Allow z-index to work */
-    margin-bottom: -40px; /* Move text further down into gray section */
-    z-index: 2; /* Bring it on top of the piano container */
-    color: #e0e0e0; /* Ensure text is visible against the dark piano */
-    margin-top: 20px; /* Add space above to prevent overlaying buttons */
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    z-index: 2;
+    color: #e0e0e0;
 }
 
 .piano-container {
@@ -1309,11 +1332,21 @@ nav {
         }
     }
     
+    .piano-header {
+        gap: 10px;
+        margin-bottom: -20px;
+    }
+    
+    .piano-logo-symbol {
+        width: 32px;
+        height: 32px;
+    }
+    
     .piano-title {
-        font-size: 1.8em;
-        margin-bottom: -20px; /* Move text down into gray section */
+        font-size: 1.6em;
+        margin-bottom: 0;
         text-align: center;
-        margin-top: 15px; /* Add space above */
+        margin-top: 0;
     }
     
     .container {
@@ -1393,10 +1426,20 @@ nav {
         padding: 0.5em 0.25em;
     }
     
+    .piano-header {
+        gap: 8px;
+        margin-bottom: -15px;
+    }
+    
+    .piano-logo-symbol {
+        width: 28px;
+        height: 28px;
+    }
+    
     .piano-title {
-        font-size: 1.5em;
-        margin-bottom: -15px; /* Move text down into gray section */
-        margin-top: 10px; /* Add space above */
+        font-size: 1.3em;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     
     .container {
